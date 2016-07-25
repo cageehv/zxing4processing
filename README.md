@@ -27,7 +27,7 @@ Available methods
     getPositionMarkers ()
     Get the position markers for the latest detected QRCode (see the red lines in the image below)
 
-	History
+History
 
 v3.1 (07/21/2016): the first Processing v2.x/3.x compatible version
 
@@ -35,7 +35,7 @@ Download
 
 Download the latest version (v3.1) of the library (for free, of course!):
 
-    zxing4p3.zip for Processing v2.x/3.x
+zxing4p3.zip for Processing v2.x/3.x
 
 Installation
 
