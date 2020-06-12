@@ -1,55 +1,29 @@
-# zxing4processing
+This library was created to integrate the open source ZXING barcode library with Processing.
 
-Salvatore Iaconesi and Rolf van Gelder created a Processing Library called 'zxing4processing'.
+By Rolf van Gelder :: http://rvg.cage.nl/ :: http://cagewebdev.com/ :: info@cagewebdev.com
 
-Processing is an open source programming language and environment for people who want to create images, animations, and interactions.
+Library page: http://cagewebdev.com/zxing4processing-processing-library/
 
-The zxing4processing library is based on the open-source bar code library 'ZXing' http://code.google.com/p/zxing
+v3.5 :: 07/29/2018
+- New: decode 17 different types of barcodes (barcodeReader() method)
+- Change: Most of the code has been rewritten
+- decodeImage() changed to QRCodeReader()
+- decodeMultipleQRCodes() changed to multipleQRCodeReader()
 
-Functionality
+v3.4 :: 06/20/2018
+- bug fixed for multiple codes position markers
 
-It can decode and generate QRCodes.
+v3.3 :: 04/14/2018
+- Added Multi QRCode support
+- New mothod: decodeMultipleQRCodes()
+- New method: getPositionMarkers(i)
 
-Available methods
+v3.2 :: 07/31/2016
+- Removed deprecated method: 'decodeWeb()'
+- Added a new method: 'version()'
+- Several minor changes
 
-    decode (boolean tryHarder, java.lang.String uri)
-    Decode the image of the QRCode found at the passed URI
 
-    decodePImage (boolean tryHarder, processing.core.PImage img)
-    Decode the QRCode from a PImage object
-
-    decodeWeb (boolean tryHarder, java.lang.String uri, java.net.URL codeBase)
-    Decode the image of the QRCode found at the passed URL
-
-    generateQRCode (java.lang.String content, int width, int height)
-    Generates a QRCode image from a string
-
-    getPositionMarkers ()
-    Get the position markers for the latest detected QRCode (see the red lines in the image below)
-
-History
-
-v3.1 (07/21/2016): the first Processing v2.x/3.x compatible version
-
-Download
-
-Download the latest version (v3.5) of the library (for free, of course!):
-
-zxing4p3.zip for Processing v2.x/3.x
-
-Installation
-
-Upzip the .zip file to your processing/libraries folder.
-
-Examples
-
-The in the .zip file included examples:
-
-    decodeImageCam
-    Hold a printed QRCode in front of your webcam and the sketch will automatically find it and decode it
-    
-    decodePImage
-    Decode a QRCode straight from a Processing ‘PImage’ object
-    
-    generateQRCode
-    Enter a text and it will generate a QRCode containing the text, with an option to save the generated image
+v3.1 :: 07/21/2016
+- Renamed the library to zxing4p3, a Processing 2.x/3.x compatible version
+- New method: getPositionMarkers()
